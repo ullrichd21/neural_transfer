@@ -1,0 +1,45 @@
+Apply Style:
+python3 neural_style.py eval --content-image "./in/mona_lisa.jpg" --model "./smodels/peit.model" --output-image "./out/mona_out_peit.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./in/mona_lisa.jpg" --model "./smodels/pollock.model" --output-image "./out/mona_out_pollock.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./in/mona_lisa.jpg" --model "./smodels/pop.model" --output-image "./out/mona_out_pop.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./in/mona_lisa.jpg" --model "./smodels/gogh.model" --output-image "./out/mona_out_gogh.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./in/mona_lisa.jpg" --model "./smodels/picasso_cube.model" --output-image "./out/mona_out_picasso_cube.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./in/mona_lisa.jpg" --model "./smodels/narwhal.model" --output-image "./out/mona_out_narwhal.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./in/mona_lisa.jpg" --model "./smodels/obama.model" --output-image "./out/mona_out_obama.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./in/mona_lisa.jpg" --model "./smodels/pop2.model" --output-image "./out/mona_out_pop2.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./in/mona_lisa.jpg" --model "./smodels/pop3.model" --output-image "./out/mona_out_pop3.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./in/mona_lisa.jpg" --model "./smodels/art_deco.model" --output-image "./out/mona_out_art_deco.jpg" --cuda 1
+
+python3 neural_style.py eval --content-image "./in/mona_lisa.jpg" --model "./smodels/pop2.model" --output-image "./out/mona_out_pop2_refined.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./out/mona_out_pop2_refined.jpg" --model "./smodels/pop2.model" --output-image "./out/mona_out_pop2_refined.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./out/mona_out_pop2_refined.jpg" --model "./smodels/pop2.model" --output-image "./out/mona_out_pop2_refined.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./out/mona_out_pop2_refined.jpg" --model "./smodels/pop2.model" --output-image "./out/mona_out_pop2_refined.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./out/mona_out_pop2_refined.jpg" --model "./smodels/pop2.model" --output-image "./out/mona_out_pop2_refined.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./out/mona_out_pop2_refined.jpg" --model "./smodels/pop2.model" --output-image "./out/mona_out_pop2_refined.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./out/mona_out_pop2_refined.jpg" --model "./smodels/pop2.model" --output-image "./out/mona_out_pop2_refined.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./out/mona_out_pop2_refined.jpg" --model "./smodels/pop2.model" --output-image "./out/mona_out_pop2_refined.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./out/mona_out_pop2_refined.jpg" --model "./smodels/pop2.model" --output-image "./out/mona_out_pop2_refined.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./out/mona_out_pop2_refined.jpg" --model "./smodels/pop2.model" --output-image "./out/mona_out_pop2_refined.jpg" --cuda 1
+python3 neural_style.py eval --content-image "./out/mona_out_pop2_refined.jpg" --model "./smodels/pop2.model" --output-image "./out/mona_out_pop2_refined.jpg" --cuda 1
+
+
+
+Show Realtime:
+python3 run.py
+
+Train:
+python3 train_model.py --dataset "./training/" --style-image "./styles/abstract.jpg" --save-model-dir "./smodels/abstract.pth" --epochs 2
+python3 train_model.py --dataset "./training/" --style-image "./styles/Piet_Mondrian_Composition_2.jpeg" --save-model-dir "./smodels/" --epochs 2
+python3 train_model.py --dataset "./training/" --style-image "./styles/pollock.jpeg" --save-model-dir "./smodels/" --epochs 2
+python3 train_model.py --dataset "./training/" --style-image "./styles/pop.jpg" --save-model-dir "./smodels/" --epochs 2
+python3 train_model.py --dataset "./training/" --style-image "./styles/van_gogh.jpg" --save-model-dir "./smodels/" --epochs 2
+python3 train_model.py --dataset "./training/" --style-image "./styles/picasso_cubism.jpg" --save-model-dir "./smodels/" --epochs 2
+python3 train_model.py --dataset "./training/" --style-image "./styles/narwhal.jpg" --save-model-dir "./smodels/" --epochs 2
+python3 train_model.py --dataset "./training/" --style-image "./styles/obama.jpg" --save-model-dir "./smodels/" --epochs 2
+python3 train_model.py --dataset "./training/" --style-image "./styles/pop2.jpg" --save-model-dir "./smodels/" --epochs 2
+python3 train_model.py --dataset "./training/" --style-image "./styles/pop3.jpg" --save-model-dir "./smodels/" --epochs 2
+
+python3 train_model.py --dataset "./training/" --style-image "./styles/abstract_pattern.jpg" --save-model-dir "./smodels/" --epochs 2
+python3 train_model.py --dataset "./training/" --style-image "./styles/art_deco.jpg" --save-model-dir "./smodels/" --epochs 2
+python3 train_model.py --dataset "./training/" --style-image "./styles/fly_chen.jpg" --save-model-dir "./smodels/" --epochs 2
+python3 train_model.py --dataset "./training/" --style-image "./styles/abstract_pattern2.png" --save-model-dir "./smodels/" --epochs 2
